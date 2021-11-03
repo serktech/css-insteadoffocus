@@ -1,0 +1,72 @@
+.btn {
+  padding: 1em 3em;
+  border-radius: 3em;
+  background: white;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  box-shadow: 0 0 25px -10px currentColor;
+  transition: transform 125ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.2);
+}
+
+@support selector(:focus-visible) {
+  .btn:focus {
+    transform: scale(1);
+  }
+
+  .btn:hover {
+    transform: scale(1.2);
+  }
+
+  .btn:focus-visible {
+    outline-offset: 0.5rem;
+    transform: scale(1.2);
+  }
+}
+.example {
+  margin-block: 3rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px -10px currentColor;
+}
+
+/* extra styling */
+body {
+  margin: 10vh 10vw;
+}
+
+.btn {
+  padding: 1em 3em;
+  border-radius: 3em;
+  background: white;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  box-shadow: 0 0 25px -10px currentColor;
+  transition: transform 125ms ease-in-out;
+}
+
+.btn + .btn {
+  margin-left: 1em;
+}
+
+.btn-one {
+  color: red;
+}
+
+.btn-two {
+  color: teal;
+}
+
+.btn-three {
+  color: green;
+}
+
+.btn-four {
+  color: orange;
+}
+
+/*# sourceMappingURL=style.css.map */
